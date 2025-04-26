@@ -26,7 +26,7 @@ export default function WalletConnect() {
   return (
     <div className="p-4 border rounded-xl shadow-md">
       {walletConnected ? (
-        <p>Wallet connected: {address}</p>
+        <p className="text-red-500">Wallet connected: {address}</p>
       ) : (
         <button onClick={connectWallet} className="bg-blue-600 text-white px-4 py-2 rounded">
           Connect Wallet
